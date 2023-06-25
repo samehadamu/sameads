@@ -33,20 +33,9 @@ public class SplashActivity extends AppCompatActivity {
         Initilize for Alien Mediation Ads
          */
         InitializeAlienAds.LoadSDK();
-        switch (SettingsAlien.Select_Main_Ads) {
-            case "ADMOB":
-                AliendroidInitialize.SelectAdsAdmob(this, Select_Backup_Ads, Backup_Initialize);
-                break;
-            case "APPLOVIN-M":
-                AliendroidInitialize.SelectAdsApplovinMax(this, Select_Backup_Ads, Backup_Initialize);
-                break;
-            case "APPLOVIN-D":
-                AliendroidInitialize.SelectAdsApplovinDis(this, Select_Backup_Ads, Backup_Initialize);
-                break;
-        }
-
-
-         AlienNotif.LoadOneSignal("535dc774-9fe3-44ae-839e-09e4133aebe9");
+        AliendroidInitialize.SelectAdsAdmob(this,Select_Backup_Ads,Backup_Initialize);
+        if (SettingsAlien.Select_Open_Ads.equals("1")){
+            AlienNotif.LoadOneSignal("535dc774-9fe3-44ae-839e-09e4133aebe9");
          AlienOpenAds.LoadOpenAds("ca-app-pub-3940256099942544/3419835294",true);
          AlienOpenAds.AppOpenAdManager.showAdIfAvailable(SplashActivity.this, new AlienOpenAds.OnShowAdCompleteListener() {
              @Override
@@ -54,6 +43,11 @@ public class SplashActivity extends AppCompatActivity {
                  startActivity(true);
              }
          });
+
+        } else {
+            startActivity(true);
+        }
+
 
     }
 

@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#faff"
     tools:context=".BannerActivity">
 
     <LinearLayout
@@ -15,8 +14,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:visibility="visible">
+            android:layout_weight="1">
 
             <RelativeLayout
                 android:id="@+id/layMediumNatives"
@@ -30,13 +28,14 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <RelativeLayout
                 android:id="@+id/laySmallNatives"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="false"
+                android:layout_alignParentBottom="true"
                 android:layout_centerInParent="true">
 
             </RelativeLayout>

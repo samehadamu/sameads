@@ -8,7 +8,7 @@ public class InitializeAlienAds {
     }
 
     public static void LoadSDK() {
-        Connection.SDKMediation(application, AppsConfig.APPKEY);
+
     }
 
 }

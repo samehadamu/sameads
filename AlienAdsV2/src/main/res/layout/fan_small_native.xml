@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="75dp"
     android:background="@color/native_background"
@@ -23,8 +22,7 @@
             android:padding="2dp"
             android:text="Ads"
             android:textColor="@color/native_text_button"
-            android:textSize="10sp"
-            tools:ignore="TextContrastCheck" />
+            android:textSize="10sp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -48,12 +46,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <RelativeLayout
                 android:layout_width="50dp"
-                android:layout_height="match_parent">
+                android:layout_height="50dp">
 
                 <com.facebook.ads.MediaView
                     android:id="@+id/native_icon_view"
@@ -81,7 +79,7 @@
                     android:layout_marginRight="5dp"
                     android:ellipsize="end"
                     android:lines="1"
-                    android:text=""
+                    android:text="Reskin Aliendroid"
                     android:textColor="@color/native_description"
                     android:textSize="10sp" />
 
@@ -92,7 +90,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:ellipsize="end"
-                    android:text=""
+                    android:text="1st - The Big Marketplace Source Code for Monetize Mobile Application on Indonesia"
                     android:textColor="@color/native_description"
                     android:textSize="10sp" />
             </LinearLayout>
@@ -111,8 +109,7 @@
                 android:textColor="#ffffff"
                 android:textSize="8sp"
                 android:visibility="visible"
-                app:backgroundTint="#0abde3"
-                tools:ignore="TouchTargetSizeCheck" />
+                app:backgroundTint="#0abde3" />
 
         </LinearLayout>
 

@@ -2,18 +2,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="75dp"
+    android:layout_height="wrap_content"
     android:background="@color/native_background">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
@@ -34,12 +34,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RelativeLayout
                     android:layout_width="50dp"
-                    android:layout_height="match_parent">
+                    android:layout_height="50dp">
 
                     <ImageView
                         android:id="@+id/ad_app_icon"
@@ -71,6 +71,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
                             android:lines="1"
+                            android:text="Reskin Aliendroid"
                             android:textColor="@color/native_title"
                             android:textSize="10sp" />
 
@@ -81,6 +82,7 @@
                             android:layout_marginEnd="20dp"
                             android:layout_marginRight="5dp"
                             android:layout_marginBottom="5dp"
+                            android:text="1st - The Big Marketplace Source Code for Monetize Mobile Application on Indonesia"
                             android:textColor="@color/native_description"
                             android:textSize="10sp" />
 
@@ -96,7 +98,6 @@
                         android:gravity="center"
                         android:textColor="@color/native_text_button"
                         android:textSize="8sp"
-                        tools:ignore="TouchTargetSizeCheck"
                         tools:text="Install" />
                 </LinearLayout>
 

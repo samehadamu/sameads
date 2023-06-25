@@ -25,11 +25,18 @@ public class MediationAdsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mediation_ads);
 
-
+        AlienMediationAds.SmallBanner(this,findViewById(R.id.layAdsView),SettingsAlien.BackupBanner);
+        AlienMediationAds.LoadInterstitial(this,SettingsAlien.BackupIntertitial);
+        AlienMediationAds.LoadRewarded(SettingsAlien.BackupReward);
+        AlienMediationAds.MediumNatives(this,findViewById(R.id.layAlienNatives),SettingsAlien.BackupNatives);
     }
 
     public void INTERSTITIAL(View view){
+      AlienMediationAds.ShowInterstitial(MediationAdsActivity.this);
 
     }
 
+    public void REWARD(View view){
+      AlienMediationAds.ShowReward();
+    }
 }

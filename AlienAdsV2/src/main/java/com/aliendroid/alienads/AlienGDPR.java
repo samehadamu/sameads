@@ -5,16 +5,13 @@ import android.provider.Settings;
 
 import androidx.annotation.Nullable;
 
-  
 import com.google.android.ump.ConsentDebugSettings;
 import com.google.android.ump.ConsentForm;
 import com.google.android.ump.ConsentInformation;
 import com.google.android.ump.ConsentRequestParameters;
 import com.google.android.ump.FormError;
 import com.google.android.ump.UserMessagingPlatform;
-import com.ironsource.mediationsdk.IronSource;
 
-import com.startapp.sdk.adsbase.StartAppSDK;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -70,15 +67,9 @@ public class AlienGDPR {
 
                 break;
             case "STARTAPP":
-                StartAppSDK.setUserConsent(activity,
-                        "pas",
-                        System.currentTimeMillis(),
-                        true);
+
                 break;
             case "IRON":
-                IronSource.setConsent(true);
-                IronSource.setMetaData("do_not_sell", "false");
-                IronSource.setMetaData("is_child_directed", String.valueOf(childDirected));
                 break;
             case "APPLOVIN-M":
                 /*
@@ -104,10 +95,11 @@ public class AlienGDPR {
                 AppLovinPrivacySettings.setHasUserConsent( true, activity );
 
                  */
-                //AppLovinPrivacySettings.setIsAgeRestrictedUser( childDirected, activity );
+
                 break;
             case "APPLOVIN-D":
 
+                //AppLovinPrivacySettings.setHasUserConsent( true, activity );
                 break;
             case "ALIEN-M":
 

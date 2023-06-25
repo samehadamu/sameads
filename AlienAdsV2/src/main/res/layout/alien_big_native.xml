@@ -38,7 +38,7 @@
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="7dp"
-            tools:ignore="HardcodedText,TextContrastCheck" />
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/icon"
@@ -73,6 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
+                        android:text="TextView"
                         android:textColor="@color/native_title"
                         android:textStyle="bold" />
 
@@ -91,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
+                    android:text="TextView"
                     android:textColor="@color/native_description" />
 
             </LinearLayout>
@@ -106,8 +108,7 @@
             android:background="@drawable/round_black"
             android:text="TextView"
             android:textColor="@color/native_text_button"
-            android:textSize="10sp"
-            tools:ignore="TouchTargetSizeCheck" />
+            android:textSize="10sp" />
 
     </LinearLayout>
 

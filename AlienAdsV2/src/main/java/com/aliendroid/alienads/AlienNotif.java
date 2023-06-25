@@ -1,14 +1,12 @@
 package com.aliendroid.alienads;
 
-import android.app.Application;
-
 import com.onesignal.OneSignal;
 
 public class AlienNotif {
     private static String ONESIGNAL_APP_ID = "";
-    public static com.aliendroid.alienads.MyApplication application;
+    public static MyApplication application;
 
-    public AlienNotif(com.aliendroid.alienads.MyApplication myApplication) {
+    public AlienNotif(MyApplication myApplication) {
         application = myApplication;
     }
 

@@ -30,8 +30,7 @@
                     android:text="Ad"
                     android:textAlignment="center"
                     android:textColor="@color/native_text_button"
-                    android:textSize="10sp"
-                    tools:ignore="TextContrastCheck" />
+                    android:textSize="10sp" />
 
             </RelativeLayout>
 
@@ -85,7 +84,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/native_title"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:text="Reskin Aliendroid" />
 
                 <TextView
                     android:id="@+id/body_text_view"
@@ -93,7 +93,8 @@
                     android:layout_height="wrap_content"
                     android:lines="2"
                     android:textColor="@color/native_description"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:text="1st - The Big Marketplace Source Code for Monetize Mobile Application on Indonesia" />
 
             </LinearLayout>
 
@@ -106,7 +107,6 @@
                 android:background="@drawable/round_black"
                 android:textColor="@color/native_text_button"
                 android:textSize="8sp"
-                tools:ignore="TouchTargetSizeCheck"
                 tools:text="Install" />
 
         </LinearLayout>
